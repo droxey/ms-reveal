@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Make School</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="500x500"
+      href="https://makeschool.com/assets/apple-touch-icon-bac21dc3895855ecf9b4a76e8da48a91fa59db1bc7358d7cd33576b63fac2eab.png">
+    <link rel="icon" sizes="50x50" type="image/png"
+      href="https://makeschool.com/assets/favicon_50x50-68cece25ffd4ff9e6545769d8a525b9ba532d432318c94e33fca9b96edb8cf6a.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://use.typekit.net/zyr1voy.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/makeschool.css">
+    <link rel="stylesheet" href="lib/css/atom-one-light.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="slides.md" data-separator="^\r?\n\r?\n\r?\n" data-separator-vertical="^\r?\n\r?\n"
+          data-separator-notes="^Note:" data-charset="utf-8"></section>
+      </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        autoPlayMedia: false,
+        hash: true,
+        history: true,
+        dependencies: [
+          // Interpret Markdown in <section> elements
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+
+          // Syntax highlight for <code> elements
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true
+          },
+
+          // Zoom in and out with Alt+click
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+
+          // Speaker notes
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          },
+        ]
+      });
+
+      Reveal.addEventListener('ready', function (event) {
+        // event.currentSlide, event.indexh, event.indexv
+      });
+    </script>
+  </body>
+</html>

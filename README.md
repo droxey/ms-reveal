@@ -6,9 +6,14 @@
 
 ### Table of Contents
 
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Features](#features)
+1. [Prerequisites](#prerequisites)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Features](#features)
+
+## Prerequisites
+
+* Node >= `v9.0.0`
 
 ## Installation
 
